@@ -1,4 +1,4 @@
-import { countdown } from './coutdown';
+import { countdown } from './countdown';
 
 declare global {
     interface Window {
