@@ -42,6 +42,31 @@ if (hasFinished) {
 
 Ao utilizar com React, pode-se passar uma função de dispatch para atualizar o state do componente como no exemplo:
 
+Adicione a cdn ao arquivo index.html do projeto ou clone o repositório para o seu projeto e realize o import da forma padrão
+
+```html
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Desafio 1 do Hirging Coders #2" />
+
+        <title>Your page</title>
+    </head>
+
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+
+        <script src="link_cdn"></script> <!--Link da cdn -->
+    </body>
+
+</html>
+```
+
 ```jsx
 // Exemplo básico de utilização com React
 function Countdown(props) {
@@ -68,33 +93,6 @@ function Countdown(props) {
 ```
 
 Exemplo básico de utilização utilizando React e typescript
-
-Adicione a cdn ao arquivo index.html do projeto ou clone o código para o seu projeto e realize o import da forma padrão
-
-```html
-<!--index.html-->
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Desafio 1 do Hirging Coders #2" />
-
-        <title>Your page</title>
-    </head>
-
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-
-        <script src="link_cdn"></script> <!--Link da cdn -->
-    </body>
-
-</html>
-```
-
-Após adicionar a CDN ao index.html - ou ter clonado o código do projeto para o seu projeto próprio -, é possível ter acesso ao tipo TimeSplit: Objeto definindo cada valor (dias, horas, minutos, segundos e se o período de tempo chegou ao fim).
 
 ```tsx
 // Countdown.tsx
