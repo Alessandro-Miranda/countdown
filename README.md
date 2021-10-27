@@ -14,7 +14,9 @@ Para a utilização com HTML, basta colar o script abaixo no seu arquivo princip
 <script src="url_da_cdn_aqui"></script>
 ```
 
-Também é possível copiar o código [aqui](url) e realizar a inserção dentro do seu projeto e realizar os imports diretamente da pasta onde o arquivo for salvo.
+Ou é possível clonar o repositório e realizar a inserção dentro do seu projeto e realizar os imports diretamente da pasta onde o arquivo for salvo.
+
+> git clone https://github.com/Alessandro-Miranda/countdown.git
 
 ## Uso
 
@@ -67,7 +69,7 @@ function Countdown(props) {
 
 Exemplo básico de utilização utilizando React e typescript
 
-Adicione a cdn ao arquivo index.html do projeto ou copie o [código]() e cole em um arquivo dentro do seu projeto e realize o import da forma padrão
+Adicione a cdn ao arquivo index.html do projeto ou clone o código para o seu projeto e realize o import da forma padrão
 
 ```html
 <!--index.html-->
@@ -92,7 +94,7 @@ Adicione a cdn ao arquivo index.html do projeto ou copie o [código]() e cole em
 </html>
 ```
 
-Após adicionar a CDN ao index.html, é possível ter acesso ao tipo TimeSplit: Objeto definindo cada valor (dias, horas, minutos, segundos e se o período de tempo chegou ao fim).
+Após adicionar a CDN ao index.html - ou ter clonado o código do projeto para o seu projeto próprio -, é possível ter acesso ao tipo TimeSplit: Objeto definindo cada valor (dias, horas, minutos, segundos e se o período de tempo chegou ao fim).
 
 ```tsx
 // Countdown.tsx
@@ -131,10 +133,6 @@ function Countdown({ targetDate }: Props) {
     );
 }
 ```
-
-## Desenvolvimento
-
-Para adaptar as funcionalidades para as necessidades de uso, ou somente colaborar com o projeto, basta clonar o templete e utilizar para realizar as modificações.
 
 ## Licença
 
