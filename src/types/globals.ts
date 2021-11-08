@@ -3,5 +3,5 @@ export type TimeSplit = {
     hours: string;
     minutes: string;
     seconds: string;
-    isFinished: boolean;
+    hasFinished: boolean;
 }
