@@ -2,7 +2,7 @@ import { countdown } from './countdown';
 
 declare global {
     interface Window {
-        countdown: any;
+        countdown: typeof countdown;
     }
 };
 
