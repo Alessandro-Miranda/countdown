@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de uso com HTML + JS</title>
+    </head>
+    <body>
+        <div>
+            <h1>Countdown</h1>
+            <p>
+                <span id="days"></span>
+                dias
+            </p>
+            <p>
+                <span id="hours"></span>
+                horas
+            </p>
+            <p>
+                <span id="minutes"></span>
+                minutos
+            </p>
+            <p>
+                <span id="seconds"></span>
+                segundos
+            </p>
+        </div>
+
+        <script src="../build.browser/app.bundle.js"></script>
+        <script>
+            const targetDate = '2022-12-31';
+                       
+            const days = document.querySelector('#days');
+            const hours = document.querySelector('#hours');
+            const minutes = document.querySelector('#minutes');
+            const seconds = document.querySelector('#seconds');
+            
+            function updateTimeRemaining(timeRemaining) {
+                days.textContent = timeRemaining.days;
+                hours.textContent = timeRemaining.hours;
+                minutes.textContent = timeRemaining.minutes;
+                seconds.textContent = timeRemaining.seconds;
+
+                if(!timeRemaining.hasFinished) {
+                    window.countdown(targetDate, updateTimeRemaining);
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                window.countdown(targetDate, updateTimeRemaining)
+            });
+        </script>
+    </body>
+</html>
