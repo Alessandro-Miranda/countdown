@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        app: './build/browser.js'
+        countdown: './build/browser.js'
     },
     output: {
         filename: '[name].bundle.js',
