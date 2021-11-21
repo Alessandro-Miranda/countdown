@@ -43,12 +43,12 @@
                 seconds.textContent = timeRemaining.seconds;
 
                 if(!timeRemaining.hasFinished) {
-                    window.countdown(targetDate, updateTimeRemaining);
+                    countdown(targetDate, updateTimeRemaining);
                 }
             }
 
             document.addEventListener('DOMContentLoaded', () => {
-                window.countdown(targetDate, updateTimeRemaining)
+                countdown(targetDate, updateTimeRemaining)
             });
         </script>
     </body>
