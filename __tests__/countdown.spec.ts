@@ -1,5 +1,20 @@
 import { afterEach, beforeEach, describe, expect, jest, test } from '@jest/globals';
 import { countdown } from '../src/countdown';
+import { TimeSplit } from '../src/types/globals';
+
+let time = {
+    days: '',
+    hours: '',
+    minutes: '',
+    seconds: '',
+    hasFinished: false
+};
+
+
+function updateTimeRemaining(timeRemaining: TimeSplit)
+{
+    time = { ...timeRemaining }
+}
 
 describe('Countdown', () => {
     beforeEach(() => {
@@ -11,17 +26,18 @@ describe('Countdown', () => {
     });
 
     test('Should return the difference between actual time and targe date', () => {
+        
         const expected = {
-            days: '01',
-            hours: '23',
-            minutes: '59',
-            seconds: '59',
+            days: '00',
+            hours: '12',
+            minutes: '00',
+            seconds: '00',
             hasFinished: false
         };
         
-        const timeRemaining = countdown('2021-10-28');
-        
-        expect(timeRemaining).toStrictEqual(expected);
+        countdown('2021-10-28T00:00:00', updateTimeRemaining);
+        jest.advanceTimersByTime(1000);
+        expect(time).toStrictEqual(expected);
         jest.runOnlyPendingTimers();
     });
 
@@ -34,9 +50,9 @@ describe('Countdown', () => {
             hasFinished: true
         };
         
-        const timeRemaining = countdown(new Date('2021-10-27T12:00:00'));
+        countdown('2021-10-27T12:00:00', updateTimeRemaining);
 
-        expect(timeRemaining).toStrictEqual(expected);
+        expect(time).toStrictEqual(expected);
         jest.runOnlyPendingTimers();
     });
 })
