@@ -16,8 +16,8 @@ const ONE_SECOND_IN_MILLIS = 1000;
 */
 function countdown(
     targetDate: string,
-    dispatchFn?: React.Dispatch<React.SetStateAction<TimeSplit>>
-): void | TimeSplit
+    dispatchFn: React.Dispatch<React.SetStateAction<TimeSplit>> | ((timeRemaining: TimeSplit) => void)
+)
 {
     const now = new Date();
     const target = new Date(targetDate);
@@ -33,26 +33,12 @@ function countdown(
             hasFinished: true
         };
 
-        return valueToBeReturned(timeRemaining, dispatchFn);
+        dispatchFn(timeRemaining);
     }
 
     setTimeout(() => {
-        return valueToBeReturned(parseTimeRemaining(secondsLeft), dispatchFn);
+        dispatchFn(parseTimeRemaining(secondsLeft));
     }, ONE_SECOND_IN_MILLIS);
-}
-
-/**
- * 
- * @param timeRemainig objeto contendo a hora no formato do tipo TimeSplit
- * @param dispatchFn função de setState
- * @returns o tempo restante ou chama a função de atualização de estado
- */
-function valueToBeReturned(
-    timeRemainig: TimeSplit,
-    dispatchFn?:React.Dispatch<React.SetStateAction<TimeSplit>>
-)
-{
-    return dispatchFn ? dispatchFn(timeRemainig): timeRemainig;
 }
 
 /**
