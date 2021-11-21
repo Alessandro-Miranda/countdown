@@ -8,7 +8,7 @@ Através de uma data alvo, que é passada como argumento para o método, é reto
 
 ## Instalação
 
-Para a utilização com HTML, basta colar o script abaixo no seu arquivo principal e já terá acesso a funcionalidade de contador acessando o método *countdown*
+Para a utilização com HTML, basta colar o script abaixo no seu arquivo principal e já terá acesso a funcionalidade de countdown invocando o método *countdown()*
 
 ```html
 <script src="url_da_cdn_aqui"></script>
@@ -20,16 +20,18 @@ Ou é possível clonar o repositório e realizar a inserção dentro do seu proj
 
 ## Uso
 
+Os exemplos de uso podem ser encontrados também na pasta (examples)["./examples"] separados em cada caso de uso e com variações um pouco mais completas de como utilizar e invocar o metódo.
+
 ### HTML
 
-O argumento passado para a função **countdown** deve ser uma string com uma data em formato válido, de preferência como: **ano-mês-dia**
+O argumento passado para a função **countdown** deve ser uma string com uma data em formato válido, de preferência como: **ano-mês-dia** e, também, uma função que será responsável por atualizar o tempo que falta até a data alvo especificada no primeiro parâmetro.
 
 ```js
 // Exemplo passando uma string contendo somente a data alvo
-const { days, hours, minutes, seconds } = countdown('2021-01-20');
+const { days, hours, minutes, seconds } = countdown('2021-01-20', updateTimeRemaining);
 
 // Exemplo passando a data e hora alvo
-const { days, hours, minutes, seconds } = countdown('2021-01-20T23:59:30');
+const { days, hours, minutes, seconds } = countdown('2021-01-20T23:59:30', updateTimeRemaining);
 
 const { hasFinished } = countdown('2021-01-20');
 
