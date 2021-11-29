@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exemplo de uso com HTML + JS</title>
     </head>
+
     <body>
         <div>
             <h1>Countdown</h1>
@@ -27,22 +29,24 @@
             </p>
         </div>
 
-        <script src="../build.browser/countdown.bundle.js"></script>
+        <script src="https://alessandro-miranda.github.io/countdown/downloads/countdown.browser.js"
+            type="text/javascript"></script>
+
         <script>
             const targetDate = '2030-12-31';
-                       
+
             const days = document.querySelector('#days');
             const hours = document.querySelector('#hours');
             const minutes = document.querySelector('#minutes');
             const seconds = document.querySelector('#seconds');
-            
+
             function updateTimeRemaining(timeRemaining) {
                 days.textContent = timeRemaining.days;
                 hours.textContent = timeRemaining.hours;
                 minutes.textContent = timeRemaining.minutes;
                 seconds.textContent = timeRemaining.seconds;
 
-                if(!timeRemaining.hasFinished) {
+                if (!timeRemaining.hasFinished) {
                     countdown(targetDate, updateTimeRemaining);
                 }
             }
@@ -52,4 +56,5 @@
             });
         </script>
     </body>
+
 </html>
