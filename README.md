@@ -6,21 +6,25 @@ Countdown é um utilitário JavaScript que pode ser utilizado tanto para aplica�
 
 Através de uma data alvo, que é passada como argumento para o método, é retornado um objeto contendo a diferença dos dias, horas, minutos e segundos, da data atual até a data alvo, e, também, um booleano indicando se já se encerrou o período desejado, com atualização a cada 1 segundo. Quando utilizado em conjunto com React, é recebido uma função de dispatch (setState) para alterar os valores e gerar a re-renderização do componente
 
+__Obs.:__ O projeto é uma adaptação - inspirada no countdown presente no [treinamento da vtex](https://github.com/vtex-trainings/store-block-template) sobre blocos customizados - utilizada em projetos e necessidades diárias.
+
 ## Instalação
 
 Para a utilização com HTML, basta colar o script abaixo no seu arquivo principal e já terá acesso a funcionalidade de countdown invocando o método *countdown()*
 
 ```html
-<script src="url_da_cdn_aqui"></script>
+<script src="https://alessandro-miranda.github.io/countdown/downloads/countdown.browser.js" type="text/javascript"></script>
 ```
 
-Ou é possível clonar o repositório e realizar a inserção dentro do seu projeto e realizar os imports diretamente da pasta onde o arquivo for salvo.
+*Para utilizar com TypeScript é possível baixar as [declaração de tipo da função](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts) e outras [tipagens](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) presentes na pasta __types__.*
 
-> git clone https://github.com/Alessandro-Miranda/countdown.git
+Ou é possível fazer o [download](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) dos arquivos necessários e realizar a inserção e os imports dentro do seu projeto, diretamente da pasta onde o arquivo for salvo.
 
+- Para utilizar com React basta baixar o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js)
+- Para utilziar com React + TypeScript, baixar as [tipagens](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) presentes na pasta _types_, o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e sua [definição de tipos](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts)
 ## Uso
 
-Os exemplos de uso podem ser encontrados também na pasta (examples)["./examples"] separados em cada caso de uso e com variações um pouco mais completas de como utilizar e invocar o metódo.
+Os exemplos de uso podem ser encontrados também na pasta [examples](https://github.com/Alessandro-Miranda/countdown/tree/main/examples) separados em cada caso de uso e com variações um pouco mais completas de como utilizar e invocar o metódo.
 
 ### HTML
 
@@ -44,7 +48,7 @@ if (hasFinished) {
 
 Ao utilizar com React, deve-se passar uma função de dispatch para atualizar o state do componente como no exemplo:
 
-Adicione a cdn ao arquivo index.html do projeto ou clone o repositório para o seu projeto e realize o import da forma padrão
+Adicione a cdn ao arquivo index.html do projeto ou faça [download do arquivo ](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e faça o import diretamente das pastas do projeto.
 
 ```html
 <!--index.html-->
@@ -95,6 +99,8 @@ function Countdown(props) {
 ```
 
 Exemplo básico de utilização utilizando React e typescript
+
+Para utilziar com o typescript, além de baixar o [código](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) do módulo, também é necessário baixar a [tipagem](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads/types) utilizada e, também, [a definição de tipos](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts).
 
 ```tsx
 // Countdown.tsx
