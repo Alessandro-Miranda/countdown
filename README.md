@@ -42,7 +42,7 @@ if (hasFinished) {
 
 ### React
 
-Ao utilizar com React, pode-se passar uma função de dispatch para atualizar o state do componente como no exemplo:
+Ao utilizar com React, deve-se passar uma função de dispatch para atualizar o state do componente como no exemplo:
 
 Adicione a cdn ao arquivo index.html do projeto ou clone o repositório para o seu projeto e realize o import da forma padrão
 
