@@ -7,7 +7,7 @@
     "test": "npx jest",
     "test:watch": "npx jest --config jest.config.js --watchAll",
     "test:cov": "npx jest --config jest.config.js --coverage",
-    "build": "tsc --build && webpack --config webpack.config.js"
+    "build": "tsc --build && webpack --config webpack.config.js && rm build/browser.js && rm build/browser.d.ts"
   },
   "keywords": [
     "countdown",
