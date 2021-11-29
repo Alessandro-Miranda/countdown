@@ -7,7 +7,6 @@ const SECONDS_IN_DAY = 24 * SECONDS_IN_HOUR;
 const ONE_SECOND_IN_MILLIS = 1000;
 
 /**
- * @author Alessandro Miranda
  * @description Calcula a diferença, em milisegundos, entre a data atual e data alvo
  * e faz o dispatch do setState, após 1 segundo, para atualizar o componente
  * @param targetDate Data final
@@ -39,7 +38,6 @@ function countdown(
 }
 
 /**
- * @author Alessandro Miranda
  * @description Faz o calculo do dia, hora, minutos e segundos com base nos segundos passados como argumento
  * @param totalSeconds Diferença em segundos da data atual até a final
  * @returns Objeto contendo a diferença de dias restantes estatus do contador
@@ -61,7 +59,6 @@ function parseTimeRemaining(totalSeconds: number): TimeSplit
 }
 
 /**
- * @author Alessandro Miranda
  * @description Insere zeros à esquerda do valor para deixar a data formatada com dois digitos
  * @param digits Quantidade de digitos para preenchimento da string
  * @param value valor a ser inserido os digitos complementares
