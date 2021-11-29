@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Countdown é um módulo JavaScript que pode ser utilizado tanto para aplicações React como, também, utilizado em conjunto no HTML.
+Countdown é um utilitário JavaScript que pode ser utilizado tanto para aplicações React como, também, utilizado em conjunto no HTML.
 
 Através de uma data alvo, que é passada como argumento para o método, é retornado um objeto contendo a diferença dos dias, horas, minutos e segundos, da data atual até a data alvo, e, também, um booleano indicando se já se encerrou o período desejado, com atualização a cada 1 segundo. Quando utilizado em conjunto com React, é recebido uma função de dispatch (setState) para alterar os valores e gerar a re-renderização do componente
 
