@@ -12,7 +12,6 @@ const ONE_SECOND_IN_MILLIS = 1000;
  * e faz o dispatch do setState, após 1 segundo, para atualizar o componente
  * @param targetDate Data final
  * @param dispatchFn Função para atualizar o componente
- * @param actualDate Data atual
 */
 function countdown(
     targetDate: string,
@@ -73,3 +72,4 @@ function parseTimeRemaining(totalSeconds: number): TimeSplit
 }
 
 export { countdown };
+
