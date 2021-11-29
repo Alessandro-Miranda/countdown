@@ -72,4 +72,3 @@ function parseTimeRemaining(totalSeconds: number): TimeSplit
 }
 
 export { countdown };
-
