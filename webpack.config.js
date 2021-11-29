@@ -5,7 +5,7 @@ module.exports = {
         countdown: './build/browser.js'
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].browser.js',
         path: path.join(__dirname, 'build.browser')
     },
     mode: 'production'
