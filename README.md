@@ -136,4 +136,4 @@ function Countdown({ targetDate }: Props) {
 
 ## Licença
 
-O Countdown está licensiado sob a licença [MIT](https://github.com/Alessandro-Miranda/countdown/blob/main/LICENSE.md).
+O Countdown está licenciado sob a licença [MIT](https://github.com/Alessandro-Miranda/countdown/blob/main/LICENSE.md).
