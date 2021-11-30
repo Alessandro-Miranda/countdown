@@ -10,7 +10,7 @@ __Obs.:__ O projeto é uma adaptação - inspirada no countdown presente no [tre
 
 ## Instalação
 
-Para a utilização com HTML, basta colar o script abaixo no seu arquivo principal e já terá acesso a funcionalidade de countdown invocando o método *countdown()*
+Para a utilização com HTML, basta colar o script abaixo no seu arquivo principal e já terá acesso a funcionalidade de countdown invocando o método ***countdown()***
 
 ```html
 <script src="https://alessandro-miranda.github.io/countdown/downloads/countdown.browser.js" type="text/javascript"></script>
