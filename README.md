@@ -58,7 +58,7 @@ Adicione a cdn ao arquivo index.html do projeto ou faça [download do arquivo ](
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Desafio 1 do Hirging Coders #2" />
+        <meta name="description" content="Yout project description" />
 
         <title>Your page</title>
     </head>
@@ -67,7 +67,7 @@ Adicione a cdn ao arquivo index.html do projeto ou faça [download do arquivo ](
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
 
-        <script src="link_cdn"></script> <!--Link da cdn -->
+        <script src="https://alessandro-miranda.github.io/countdown/downloads/countdown.browser.js" type="text/javascript"></script>
     </body>
 
 </html>
