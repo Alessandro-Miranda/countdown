@@ -29,7 +29,7 @@ Os exemplos de uso podem ser encontrados também na pasta [examples](https://git
 
 ### HTML
 
-O argumento passado para a função **countdown** deve ser uma string com uma data em formato válido, de preferência como: **ano-mês-dia** e, também, uma função que será responsável por atualizar o tempo que falta até a data alvo especificada no primeiro parâmetro.
+O argumento passado para a função **countdown** deve ser uma string com uma data em formato válido, de preferência como: **ano-mês-dia**, e, também, uma função que será responsável por atualizar o tempo que falta até a data alvo especificada no primeiro parâmetro.
 
 ```js
 // Exemplo passando uma string contendo somente a data alvo
