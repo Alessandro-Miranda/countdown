@@ -20,8 +20,8 @@ Para a utilização com HTML, basta colar o script abaixo no seu arquivo princip
 
 Ou é possível fazer o [download](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) dos arquivos necessários e realizar a inserção e os imports dentro do seu projeto, diretamente da pasta onde o arquivo for salvo.
 
-- Para utilizar com React basta baixar o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js)
-- Para utilziar com React + TypeScript, baixar as [tipagens](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) presentes na pasta _types_, o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e sua [definição de tipos](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts)
+- **React**: Para utilizar com React basta baixar o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e salva-lo dentro do seu projeto, na pasta que preferir, e realizar os imports normalmente. 
+- **React + TypeScript**: baixar as [tipagens](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) presentes na pasta _types_, o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e sua [definição de tipos](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts)
 ## Uso
 
 Os exemplos de uso podem ser encontrados também na pasta [examples](https://github.com/Alessandro-Miranda/countdown/tree/main/examples) separados em cada caso de uso e com variações um pouco mais completas de como utilizar e invocar o metódo.
