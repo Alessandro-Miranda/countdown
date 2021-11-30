@@ -6,7 +6,7 @@ Countdown é um utilitário JavaScript que pode ser utilizado tanto para aplica�
 
 Através de uma data alvo, que é passada como argumento para o método, é retornado um objeto contendo a diferença dos dias, horas, minutos e segundos, da data atual até a data alvo, e, também, um booleano indicando se já se encerrou o período desejado, com atualização a cada 1 segundo. Quando utilizado em conjunto com React, é recebido uma função de dispatch (setState) para alterar os valores e gerar a re-renderização do componente
 
-__Obs.:__ O projeto é uma adaptação - inspirada no countdown presente no [treinamento da vtex](https://github.com/vtex-trainings/store-block-template) sobre blocos customizados - utilizada em projetos e necessidades diárias.
+__Obs.:__ O projeto é uma adaptação - inspirada no countdown presente no [treinamento da vtex](https://github.com/vtex-trainings/store-block-template) sobre blocos customizados - utilizada em projetos e necessidades diárias como, por exemplo, em períodos de black friday, onde são criados contadores para início das promoções, promoções, lançamentos e, até mesmo, tempo para se cadastrar em algo, que necessite de um countdown.
 
 ## Instalação
 
