@@ -16,7 +16,7 @@ Para a utilização com HTML, basta colar o script abaixo no seu arquivo princip
 <script src="https://alessandro-miranda.github.io/countdown/downloads/countdown.browser.js" type="text/javascript"></script>
 ```
 
-*Para utilizar com TypeScript é possível baixar as [declaração de tipo da função](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts) e outras [tipagens](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) presentes na pasta __types__.*
+**Obs**: *Para utilizar com TypeScript é possível baixar as [declaração de tipo da função](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts) e outras [tipagens](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) presentes na pasta __types__.*
 
 Ou é possível fazer o [download](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) dos arquivos necessários e realizar a inserção e os imports dentro do seu projeto, diretamente da pasta onde o arquivo for salvo.
 
