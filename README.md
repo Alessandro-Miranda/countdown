@@ -22,6 +22,7 @@ Ou é possível fazer o [download](https://github.com/Alessandro-Miranda/countdo
 
 - **React**: Para utilizar com React basta baixar o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e salva-lo dentro do seu projeto, na pasta que preferir, e realizar os imports normalmente. 
 - **React + TypeScript**: baixar as [tipagens](https://github.com/Alessandro-Miranda/countdown/tree/main/downloads) presentes na pasta _types_, o código do [countdown](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e sua [definição de tipos](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.d.ts)
+
 ## Uso
 
 Os exemplos de uso podem ser encontrados também na pasta [examples](https://github.com/Alessandro-Miranda/countdown/tree/main/examples) separados em cada caso de uso e com variações um pouco mais completas de como utilizar e invocar o metódo.
@@ -48,7 +49,7 @@ if (hasFinished) {
 
 Ao utilizar com React, deve-se passar uma função de dispatch para atualizar o state do componente como no exemplo:
 
-Adicione a cdn ao arquivo index.html do projeto ou faça [download do arquivo ](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e faça o import diretamente das pastas do projeto.
+Adicione a cdn ao arquivo index.html do projeto ou faça [download do arquivo](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e faça o import diretamente das pastas do projeto.
 
 ```html
 <!--index.html-->
