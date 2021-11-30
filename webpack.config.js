@@ -6,7 +6,7 @@ module.exports = {
     },
     output: {
         filename: '[name].browser.js',
-        path: path.join(__dirname, 'build.browser')
+        path: path.join(__dirname, 'build')
     },
     mode: 'production'
 }
