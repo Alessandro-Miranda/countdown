@@ -49,7 +49,7 @@ if (hasFinished) {
 
 Ao utilizar com React, deve-se passar uma função de dispatch para atualizar o state do componente como no exemplo:
 
-Adicione a cdn ao arquivo index.html do projeto ou faça [download do arquivo](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e faça o import diretamente das pastas do projeto.
+Adicione a url ao arquivo index.html do projeto ou faça [download do arquivo](https://github.com/Alessandro-Miranda/countdown/blob/main/downloads/countdown.js) e faça o import diretamente das pastas do projeto.
 
 ```html
 <!--index.html-->
