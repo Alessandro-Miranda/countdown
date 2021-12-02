@@ -64,8 +64,10 @@ function parseTimeRemaining(totalSeconds: number): TimeSplit
  * @param value valor a ser inserido os digitos complementares
  * @returns Sring preenchida com zeros à esquerda
  */
- const fillWithZero = (digits: number, value: number) => {
+function fillWithZero(digits: number, value: number)
+{
     return String(value).padStart(digits, '0');
 }
 
 export { countdown };
+
